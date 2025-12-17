@@ -1,6 +1,6 @@
 /***********************************************************************
-* File: NL - Master Load Script.qvs
-* Purpose: Contains Load logic for apps. Uses QVD path variable from connections.qvs
+* File: Studies.qvs
+* Purpose: Contains Load logic for ODP_Study table for apps. Uses QVD path variable from connections.qvs
 ************************************************************************/
 
 
