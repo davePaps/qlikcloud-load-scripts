@@ -1,0 +1,9 @@
+/*****************************************************************
+* File: main_load.qvs
+* Purpose: Orchestrates all data loads
+*****************************************************************/
+
+$(Include=lib://DataFiles/scripts/connections/libraries.qvs)
+
+$(Include=lib://DataFiles/scripts/loads/sites.qvs)
+$(Include=lib://DataFiles/scripts/loads/studies.qvs)
