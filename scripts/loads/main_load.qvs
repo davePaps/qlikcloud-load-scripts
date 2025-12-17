@@ -1,9 +1,24 @@
-/*****************************************************************
+/*****************************************************************************************************
 * File: main_load.qvs
-* Purpose: Orchestrates all data loads
-*****************************************************************/
+* Purpose: Orchestrates all data loads. We push all qvs files to QlikCloud
+*          The app will reference only this script, which references the others
+*          This keeps apps as 'clean' as possible
+*
+*          Will need to insert the correct GUIDs for the script locations prior to pushing from github
+*          AND ENSURE THAT THESE GUIDS DON'T CHANGE WHEN OVERWRITTEN!
+* 
+*
+*******************************************************************************************************/
 
-$(Include=lib://DataFiles/scripts/connections/libraries.qvs)
+/* Setup connections (Only Qlik at the minute but others such as Google Sheets go here */
 
-$(Include=lib://DataFiles/scripts/loads/sites.qvs)
-$(Include=lib://DataFiles/scripts/loads/studies.qvs)
+$(Must_Include=[script://e7044c58-ea4f-435f-95fd-xxxxxxx]);
+
+/* Load data here, one qvs per source (e.g. Studies, then sites etc) */
+
+$(Must_Include=[script://e7044c58-ea4f-435f-95fd-xxxxxxx]);
+
+/* Transformation logic here */
+
+$(Must_Include=[script://e7044c58-ea4f-435f-95fd-xxxxxxx]);
+
