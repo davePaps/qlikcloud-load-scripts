@@ -1,0 +1,6 @@
+/*****************************************************************
+* File: libraries.qvs
+* Purpose: Provides variable to hold standard QVD file location
+*****************************************************************/
+
+LET vQvdRoot = 'lib://Shared Regional:DataFiles/QVDs/Core/';
